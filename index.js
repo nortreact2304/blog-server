@@ -11,8 +11,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 //Post päringute sisu parsitakse kui json objektid
 app.use(express.json());
 
-const password = 'bWjTWbCVNFO4Ib61'
-const account = 'blog-machine'
+const password = 'your-passwod'
+const account = 'your-account'
 const uri = `mongodb+srv://${account}:${password}@cluster0.vbolccm.mongodb.net/?retryWrites=true&w=majority`
 
 const dbClient = new MongoClient(uri, {
